@@ -1,0 +1,184 @@
+/* styles.css */
+
+/* ---------- Estilos Gerais ---------- */
+body {
+    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+/* ---------- Estilos do Card ---------- */
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+/* ---------- Inputs e Botões ---------- */
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.btn {
+    border-radius: 0.5rem;
+}
+
+.btn-primary,
+.btn-success {
+    border-radius: 0.5rem;
+}
+
+.btn-success {
+    width: 100%;
+}
+
+/* ---------- Links ---------- */
+.link {
+    text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* ---------- Menu Lateral (Offcanvas) ---------- */
+.offcanvas-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.offcanvas-body .list-group-item {
+    border: none;
+}
+
+.offcanvas-body .list-group-item a {
+    color: #212529; /* Cor padrão dos links */
+    text-decoration: none;
+}
+
+.offcanvas-body .list-group-item a:hover {
+    color: #28a745; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilo personalizado para o item ativo no menu lateral */
+.list-group-item active {
+    background-color: #28a745 !important; /* Cor de fundo verde */
+    color: #fff !important; /* Cor do texto branca */
+    border: none;
+}
+
+.offcanvas-body .list-group-item active {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: #fff !important; /* Cor do texto branca */
+    border: none;
+}
+
+.offcanvas-body .list-group-item active a {
+    color: #fff !important; /* Garante que o link dentro do item ativo fique branco */
+    background-color: #28a745;
+    text-decoration: none;
+}
+
+/* ---------- Alinhamento Centralizado ---------- */
+.container {
+    padding: 0 15px; /* Ajuste para dispositivos móveis */
+}
+
+.container.h-100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ---------- Fundo Personalizado para a Página de Login ---------- */
+.login-body {
+    background: url('imagens/bg-agricultura.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Tabelas ---------- */
+.table {
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td:first-child,
+.table th:first-child {
+    text-align: left;
+}
+
+.table .btn {
+    margin-right: 5px;
+}
+
+/* ---------- Formulários ---------- */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form.row.g-3.mb-4 {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ---------- Alertas ---------- */
+.alert {
+    margin-top: 20px;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    .col-md-4.mb-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
