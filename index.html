@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda Agrícola</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Arial', sans-serif; }
+        body { background-color: #f0f2f5; color: #333; }
+        
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #FFF;
+            color: rgb(73, 73, 73);
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; max-width: 600px; margin: 0 auto; }
+        
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        /* Seções com caixas e estilo mais elaborado */
+        .section {
+            background-color: #ffffff;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        
+        .section:hover { transform: translateY(-5px); }
+
+        h2 { 
+            color: #006400; 
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        p, ul { 
+            font-size: 1.1em; 
+            line-height: 1.6;
+        }
+        
+        /* Estilo para listas */
+        ul { 
+            margin-top: 10px; 
+            padding-left: 20px; 
+        }
+
+        /* Estilo para links */
+        a {
+            color: #006400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover { text-decoration: underline; }
+
+        /* Estilo para botões */
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #388E3C;
+        }
+
+        /* Estilo para o código */
+        code {
+            display: block;
+            background-color: #f1f1f1;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #ddd;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="http://revendacampoagricola.com.br/imagens/revenda_agricola.png" style="max-width: 400px;" /><br/><br/><br/>
+        <p>Bem-vindo ao Revenda Agrícola, uma plataforma web desenvolvida para facilitar a compra e venda de produtos agrícolas.</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Sobre o Projeto</h2>
+            <p>O Revenda Agrícola é uma plataforma que permite que produtores e revendedores cadastrem seus produtos, gerenciem suas vendas e interajam com compradores interessados.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sumário</h2>
+            <ul>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#tecnologias">Tecnologias Utilizadas</a></li>
+                <li><a href="#pre-requisitos">Pré-requisitos</a></li>
+                <li><a href="#instalacao">Instalação</a></li>
+                <li><a href="#acesse">Acesse</a></li>
+            </ul>
+        </div>
+
+        <div id="funcionalidades" class="section">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Cadastro de Usuários: Registre-se para acessar todas as funcionalidades.</li>
+                <li>Login e Logout: Sistema seguro de autenticação.</li>
+                <li>Gerenciamento de Perfil: Edite seus dados pessoais e senha.</li>
+                <li>Cadastro de Produtos com Imagens: Cadastre produtos com até 5 imagens.</li>
+                <li>Pesquisa de Produtos: Encontre produtos por nome e categoria.</li>
+                <li>Carrinho de Compras: Adicione produtos ao carrinho e gerencie seus itens.</li>
+                <li>Edição e Exclusão de Produtos: Gerencie seus produtos cadastrados.</li>
+                <li>Visualização de Produtos Recentes: Veja os produtos mais recentes na página inicial.</li>
+                <li>Estatísticas Personalizadas: Visualize estatísticas dos seus produtos e imóveis.</li>
+            </ul>
+            <a href="http://www.revendacampoagricola.com.br/" class="btn">Ver Demo</a>
+        </div>
+
+        <div id="tecnologias" class="section">
+            <h2>Tecnologias Utilizadas</h2>
+            <ul>
+                <li><strong>Linguagem de Programação:</strong> PHP</li>
+                <li><strong>Banco de Dados:</strong> MySQL</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap 5</li>
+                <li><strong>Bibliotecas Adicionais:</strong> Bootstrap Icons, JavaScript</li>
+            </ul>
+        </div>
+
+        <div id="pre-requisitos" class="section">
+            <h2>Pré-requisitos</h2>
+            <ul>
+                <li>PHP >= 7.4</li>
+                <li>MySQL >= 5.7</li>
+                <li>Servidor Web (Apache, Nginx, etc.)</li>
+                <li>Composer (opcional, se utilizar dependências gerenciadas)</li>
+            </ul>
+        </div>
+
+        <div id="instalacao" class="section">
+            <h2>Instalação</h2>
+            <p>Clone o repositório:</p>
+            <code>git clone https://github.com/adrianaarendt/revendaagricolaunifil/new/master.git</code>
+            <a href="https://github.com/adrianaarendt/revendaagricolaunifil/tree/master" class="btn">Veja no GitHub</a>
+        </div>
+
+        <div id="acesse" class="section" >
+            <h2>Acesse</h2>
+            <p>Acesse ao nosso site e veja o aplicativo rodando:</p>
+            <div style="text-align: center;">
+                <img src="login.png" style="max-height: 500px;" /><br/>
+                <a href="http://revendacampoagricola.com.br/" class="btn">Acessar Site</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Revenda Agrícola. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
